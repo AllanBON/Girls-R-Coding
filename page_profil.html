@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nos profils</title>
+</head>
+<body>
+	<div class="menu">
+		<nav class="">
+			<a href="#">Mur</a>
+			<a href="#">Actualités</a>
+			<a href="#">Profils</a>
+		</nav>
+	</div>
+	<div class="container-main">
+		<div class="liste-profils-container">
+			<nav>
+				<a href="#" class="first-profil">Profil 1</a>
+				<a href="#" class="second-profil">Profil 2</a>
+			</nav>
+		</div>
+		<div class="profils-container">
+			<div class="first-profil-container js-first-profil-container">
+				<div class="me">
+					<div>
+						<img src="images/candy.jpg" alt="image profil, petit (emoji)">
+					</div>
+					<div>
+						<div>
+							<label>NOM Prénom</label>
+							<p>Descritpion d'une ligne</p>
+							<p>Dijon</p>
+						</div>
+						<div>
+							<label>Ecole : .......</label>
+							<p>Clase : ........</p>
+						</div>
+					</div>
+				</div>
+				<div class="passion">
+					<div class="first-passion">
+						<div>
+							<span>
+								<img src="images/informatique.jpg" alt="passion1">
+							</span>
+							<label>Passion 1</label>
+						</div>
+						<div>
+							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+							consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+							petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+							arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+							terrae Gallorum.</p>
+						</div>
+					</div>
+					<div class="second-passion">
+						<div>
+							<span>
+								<img src="images/art.jpg" alt="passion2">
+							</span>
+							<label>Passion 1</label>
+						</div>
+						<div>
+							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+								terrae Gallorum.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="second-profil-container js-second-profil-container">
+				<div class="me">
+					<div>
+						<img src="images/candy.jpg" alt="image profil1, petit (emoji)">
+					</div>
+					<div>
+						<div>
+							<label>NOM Prénom 2</label>
+							<p>Descritpion d'une ligne</p>
+							<p>Dijon</p>
+						</div>
+						<div>
+							<label>Ecole : .......</label>
+							<p>Clase : ........</p>
+						</div>
+					</div>
+				</div>
+				<div class="passion">
+					<div class="first-passion">
+						<div>
+							<span><img src="images/informatique.jpg" alt="passion1"></span>
+							<label>Passion 1</label>
+						</div>
+						<div>
+							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+								terrae Gallorum.</p>
+						</div>
+					</div>
+					<div class="second-passion">
+						<div>
+							<span>
+								<img src="images/art.jpg" alt="passion2">
+							</span>
+							<label>Passion 1</label>
+						</div>
+						<div>
+							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+								terrae Gallorum.</p><br/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	var lienProfilF = document.getElementsByClassName('first-profil');
+	var profilF = document.getElementsByClassName('js-first-profil-container');
+	var lienProfilS = document.getElementsByClassName('second-profil');
+	var profilS = document.getElementsByClassName('js-second-profil-container');
+	profilS[0].style.display = "none"
+
+	lienProfilF[0].addEventListener("click", function(){changeProfil(profilF[0], profilS[0])}, false);
+	lienProfilS[0].addEventListener("click", function(){changeProfil(profilS[0], profilF[0])}, false);
+
+	function changeProfil(pdisplayed, pHidden){
+		pHidden.style.display = "none"
+		pdisplayed.style.display = ""
+	}	
+</script>
