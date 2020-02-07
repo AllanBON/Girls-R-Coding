@@ -1,0 +1,53 @@
+/* == Utilities == */
+
+.container-global {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 56px;
+}
+
+.container-1, .container-2, .container-3 {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.padding {
+    padding: 16px;
+}
+
+.margin-bottom {
+    margin-bottom: 16px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .container-1, .container-2, .container-3 {
+        width: 50%;
+        padding: 8px;
+    }
+    .container-1, .container-3 {
+        float: left;
+    }
+    .container-2 {
+        float: right;
+    }
+}
+
+@media (min-width: 1140px) {
+    .container-global {
+      padding-top: 70px;
+      width: 1140px;
+      display: flex;
+    }
+    .container-1, .container-3 {
+      flex: 1;
+    }
+    .container-2 {
+      flex: 2;
+    }
+}
