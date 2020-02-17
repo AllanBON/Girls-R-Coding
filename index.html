@@ -3,178 +3,138 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Site de ...</title>
-  <link rel="stylesheet" href="./assets/css/base.css">
-  <link rel="stylesheet" href="./assets/css/custom.css">
-  <link rel="stylesheet" href="./assets/css/utility.css">
+  <title></title>
+  <link rel="stylesheet" href="./assets/css/index.css">
   <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
-
-
-
-  <!-- Composant de la barre de menu -->
   <div class="menu">
     <div class="container-global">
 
-      <button class="menu__button" type="button" name="button">
+      <button type="button" name="button">
         <svg class="icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
         </svg>
       </button>
-      <nav class="menu__navigation menu__navigation--mobile">
-        <a class="menu__link" href="#">Lien 1</a>
-        <a class="menu__link" href="#">Lien 2</a>
-        <a class="menu__link" href="#">Lien 3</a>
+      <nav class="nav nav-left nav-mobile">
+        <a href="#">Lien 1</a>
+        <a href="#">Lien 2</a>
+        <a href="#">Lien 3</a>
       </nav>
     </div>
+
   </div>
-  <!-- fin de Composant -->
-
   <div class="container-global">
-
-
     <aside class="container-1">
 
-      <!-- Composant de la carte profil -->
-      <div class="profil-card aside-element">
-        <img src="https://via.placeholder.com/300" class="profil-card__background">
-        <div class="profil-card__body">
+      <div class="aside-element">
 
-          <img src="https://via.placeholder.com/64" class="profil-card__avatar" />
+          <div class="background-profil"></div>
+          <div class="body-profil">
+            <img src="./assets/images/logo.png" class="round infos"/>
+            <div class="center-all">
 
-          <div class="profil-card__infos">
+              <b>John Doe</b>
+              <div class="text-light">Développeur Web</div>
 
-            <!-- Exercice 1 : Changer votre nom... -->
-            <b class="profil-card__title">John Doe</b>
-            <div class="text-light">Développeur Web</div>
+            </div>
           </div>
-        </div>
+
       </div>
-      <!-- Fin de Composant -->
-
-
     </aside>
-
-
     <div class="container-2">
-
-      <!-- Composant de la barre d'information -->
-      <div class="info-bar margin-bottom">
-        <div class="info-bar__item">
-          <strong class="info-bar__value">175</strong>
-          <span class="info-bar__label">Posts</span>
+      <div class="main-element flex">
+        <div class="number-infos padding">
+          <strong>175</strong>
+          <span>Posts</span>
         </div>
-        <div class="info-bar__item">
-          <strong class="info-bar__value">58</strong>
-          <span class="info-bar__label">Contacts</span>
-          <div class="info-bar__deco-line"></div>
-        </div>
-        <div class="info-bar__item">
-          <strong class="info-bar__value">587</strong>
-          <span class="info-bar__label">Messages</span>
-        </div>
-      </div>
-      <!-- Fin de Composant -->
-
-
-      <!-- Composant de la zone de publication -->
-      <div class="poster-message margin-bottom">
-        <p class="poster-message__title">Poster un message</p>
-        <form class="poster-message__form" action="javascript:void(0)" method="post">
-            <textarea 
-              name="message" 
-              placeholder="Votre message ici..." 
-              class="poster-message__textarea js-publish-message"></textarea>
-          <div class="poster-message__actions">
-            <input 
-              type="submit" 
-              name="publier" 
-              value="Publier" 
-              class="poster-message__publish js-publish-action">
-          </div>
-        </form>
-      </div>
-      <!-- Fin de Composant -->
-
-
-      <div class="js-publish-container">
-        
-        <article>
-
-          <!-- Composant d'un post -->
-          <div class="post post--white-bg">
-            <div class="post__header post-header">
-              <img src="https://via.placeholder.com/64" alt="" class="post__avatar">
-              <div>
-                <b class="post__author">Jane Doe</b>
-                <div class="post__author-info post__author-info--light">Développeuse Web Back-end</div>
-              </div>
-            </div>
-
-            <i class="post__date post__date--light">Posté il y a 7h</i>
-            <p class="post__description">
-              Il y a 10 types de personnes. Ceux qui comprennent le binaire, et les autres.
-            </p>
-
-            <aside class="feedback">
-              <span class="feedback-item">
-                145 likes
-              </span>
-              <span class="feedback-item">
-                1 commentaire
-              </span>
-            </aside>
-
-            <div class="post__actions">
-              <button type="button" name="like" class="post__button post__button--like">Like</button>
-              <button type="button" name="repondre" class="post__button post__button--answer">Répondre</button>
-            </div>
-
-            <!-- Composant d'un commentaire de post -->
-            <div class="comment">
-              <div class="comment__triangle comment__triangle--top"></div>
-              <div class="comment__triangle comment__triangle--bottom"></div>
-              
-              <div class="post">
-                <div class="post__header">
-                  <img src="https://via.placeholder.com/64" alt="" class="post__avatar">
-                  <div>
-                    <b class="post__author">Jane Doe</b>
-                    <div class="post__author-info post__author-info--light">Développeuse Web Back-end</div>
-                  </div>
-                </div>
-                <i class="post__date post__date--light">Posté il y a 7h</i>
-                <p class="post__description post__description--no-margin-bottom">
-                  Il y a 10 types de personnes. Ceux qui comprennent le binaire, et les autres.
-                </p>
-              </div>
-            </div>
-            <!-- Fin de Composant -->
+        <div class="number-infos padding">
+          <strong>58</strong>
+          <span>Contacts</span>
+          <div class="deco-line">
 
           </div>
-          <!-- Fin de Composant -->
+        </div>
+        <div class="number-infos padding">
+          <strong>587</strong>
+          <span>Messages</span>
+        </div>
+      </div>
+      <div class="main-element padding bg-white">
+        <p>Poster un message</p>
+        <form class="message" action="index.html" method="post">
+          <fieldset>
+            <textarea name="message" placeholder="Votre message ici..."></textarea>
 
-        </article>
+          </fieldset>
+          <div class="control-group">
+            <input type="submit" name="publier" value="Publier" class="submit">
+          </div>
+          </form>
+      </div>
+      <hr>
+      <div class="main-element padding bg-white">
+        <div class="post-header">
+          <img src="./assets/images/logo_bonbon.png" alt="" class="medium-pic">
+          <div>
+            <b>Jane Doe</b>
+            <div class="text-light">Développeuse Web Back-end</div>
+          </div>
+        </div>
+        <i>Posté il y a 7h</i>
+        <p class="post-description">
+          Il y a 10 types de personnes. Ceux qui comprennent le binaire, et les autres.
+        </p>
+        <aside class="post-feedback text-light">
+          <span class="feedback-element">
+            145 likes
+          </span>
+          <span class="feedback-element">
+            1 commentaire
+          </span>
+        </aside>
+        <div class="control-group">
+          <button type="button" name="like" class="submit bg-green">Like</button>
+          <button type="button" name="repondre" class="submit bg-blue">Répondre</button>
+        </div>
+        <div class="commentaire padding">
+          <div class="triangle triangle-top"></div>
+          <div class="triangle triangle-bottom"></div>
+          <div class="post-header">
+            <img src="./assets/images/logo_bonbon_b.png" alt="" class="medium-pic">
+            <div class="commentaire-infos">
+
+              <b>ColdCase</b>
+              <div class="commentaire-content">
+                J'ai pas compris...
+              </div>
+
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
-
-
-    <!-- Composant d'un commentaire de post -->
     <aside class="container-3">
-      <div class="copyright">
-        <div class="copyright__title">Réalisation</div>
-        <p class="copyright__author">Ce site a été réalisé par ...</p>
+      <div class="aside-element center padding">
+        <p>Vous les connaissez ?</p>
+        <div>
+          <img src="./assets/images/avatar_01.jpg" alt="" class="medium-pic">
+          <img src="./assets/images/avatar_02.png" alt="" class="medium-pic">
+          <img src="./assets/images/avatar_03.jpg" alt="" class="medium-pic">
+          <img src="./assets/images/avatar_04.jpg" alt="" class="medium-pic">
+        </div>
+      </div>
+      <div class="aside-element center padding">
+        <a href="#">Mentions légales C.G.U</a>
+        <hr>
+        <p>	&copy;Girls'R coding</p>
       </div>
     </aside>
-    <!-- Fin de Composant -->
-
   </div>
-
-  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
