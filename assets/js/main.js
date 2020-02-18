@@ -38,7 +38,7 @@ function getItemTemplate(message, author, date) {
     return `
         <div class="post post--white-bg margin-bottom">
           <div class="post__header post-header">
-            <img src="./assets/images/logoArch.png" alt="" class="post__avatar">
+            <img src="assets/images/logo.png" alt="" class="post__avatar">
             <div>
               <b class="post__author">${author}</b>
               <div class="post__author-info post__author-info--light">Développeuse Web Back-end</div>

@@ -1,14 +1,27 @@
 :root {
+
+  --rose-lighter: #fff6f8;
+  --rose-light: #ffecf1;
+  --rose-primary: #ff4b75;
+  --rose-dark: #ca3155;
+
+  --purple-primary: #a1286b;
+  --purple-dark: #7e0f4c;
+  
   --background-menu-grey: #f0f0f0;
   --background-menu-white: #fff;
-  --background-menu-light: #34495e;
-  --background-menu-dark: #49698a;
+
+  --background-light: var(--rose-lighter);
+  --primary-light: var(--rose-light);
+  --primary: var(--rose-primary);
+  --primary-dark: var(--rose-dark);
+
   --dimensionTriangle: 30px;
 }
 
 body, html {
   min-height: 100%;
-  background-color: #f0f0f0;
+  background-color: var(--background-light);
   margin: 0;
   padding: 0;
 }
@@ -32,20 +45,21 @@ body, html {
 }
 
 .menu__link:hover {
-  background-color: var(--background-menu-grey);
+  background-color: var(--primary-dark);
 }
 
 .menu__button {
   border: none;
   width: 100%;
   height: 48px;
-  background-color: var(--background-menu-light);
+  background-color: var(--primary);
 }
 
 .menu {
   position: fixed;
   width: 100%;
   z-index: 10000;
+  box-shadow: 0 0 8px hsla(0, 0%, 0%, 0.20)
 }
 
 .menu__navigation.menu__navigation--mobile {
@@ -73,7 +87,7 @@ body, html {
   .menu {
     width: 100%;
     height: inherit;
-    background-color: var(--background-menu-light);
+    background-color: var(--primary);
   }
   .menu__button {
     display: none;
@@ -95,7 +109,7 @@ body, html {
     transition: background-color 0.2s ease-out;
   }
   .menu__link:hover {
-    background-color: var(--background-menu-dark);
+    background-color: var(--primary-dark);
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
@@ -195,7 +209,7 @@ body, html {
 }
 
 .info-bar__item:nth-child(2):hover > .info-bar__deco-line {
-  background-color: var(--background-menu-dark);
+  background-color: var(--primary);
 }
 
 .info-bar__label {
@@ -221,6 +235,8 @@ body, html {
 .poster-message__title {
   margin: 0;
   padding-bottom: 16px;
+  color: var(--primary-dark);
+  font-weight: 600;
 }
 
 .poster-message__textarea {
@@ -228,6 +244,9 @@ body, html {
   min-height: 100px;
   padding: 8px;
   resize: vertical;
+  border-radius: 3px;
+  border: 2px dashed var(--primary-dark);
+  background: var(--background-light);
 }
 
 .poster-message__actions {
@@ -238,7 +257,7 @@ body, html {
 
 .poster-message__publish {
   padding: 8px;
-  background-color: #9e54bd;
+  background-color: var(--purple-primary);
   color: white;
   border-style: none;
   border-radius: 3px;
@@ -250,7 +269,7 @@ body, html {
 }
 
 .poster-message__publish:hover {
-  background-color: #753690;
+  background-color: var(--purple-dark);
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
@@ -277,7 +296,8 @@ body, html {
 .post__avatar {
   width: 64px;
   height: 64px;
-  margin-right: 8px;
+  margin-right: 16px;
+  border-radius: 50%;
 }
 
 .post__author {
@@ -327,11 +347,11 @@ body, html {
   margin-left: 16px;
 }
 
-.post__button.post__button--like { background-color: #5ba520; }
-.post__button.post__button--like:hover { background-color: #4e8c1d; }
+.post__button.post__button--like { background-color: var(--primary); }
+.post__button.post__button--like:hover { background-color: var(--primary-dark); }
 
-.post__button.post__button--answer { background-color: #4c69ef; }
-.post__button.post__button--answer:hover { background-color: #2b43b5; }
+.post__button.post__button--answer { background-color: var(--purple-primary); }
+.post__button.post__button--answer:hover { background-color: var(--purple-dark); }
 
 
 /* -------- Component Comment --------- */
@@ -342,7 +362,7 @@ body, html {
   margin: 16px 0;
   clear: both;
   position: relative;
-  background-color: var(--background-menu-grey);
+  background-color: var(--background-light);
 }
 .comment__triangle {
   width: 0;
@@ -354,7 +374,7 @@ body, html {
   position: absolute;
 }
 .comment__triangle.comment__triangle--top {
-  border-bottom: var(--dimensionTriangle) solid var(--background-menu-grey);
+  border-bottom: var(--dimensionTriangle) solid var(--background-light);
   top: calc(-1*var(--dimensionTriangle));
 }
 .comment__triangle.comment__triangle--bottom {
