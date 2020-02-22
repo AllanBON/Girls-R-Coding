@@ -1,27 +1,28 @@
+
 /* GENERAL */ 
-​
+
 /* EXERCICE : Arrondissez les images seulement sur 2 côtés  */
-​
+
 img{  /* Style de toutes les images */
     width: 450px; /* forcer la largeur à la taille souhaitée */
     margin-top: 5px; /* décaler la photo par rapport au dessus */
     margin-left: 5px; /* décaler la photo par rapport à la gauche */
     border-radius: 20px 20px 20px 20px; /* Arrondir les angles de l'image */
 }
-​
+
 body{ /* Le corps de la page */
     background-color: whitesmoke; /* Couleur de fond */
 }
-​
+
 a{ /* liens hypertextes */
     text-decoration: none; /* Aucune décoration (suppression du souligné en dessous de l'écriture etc ...)*/
 }
-​
-​
+
+
 /* Menu => Barre en haut avec les liens mur, actus, profils */
-​
+
 /* EXERCICE : Modifiez  la couleur de la balise a du menu */
-​
+
 .menu{
     position: fixed; /* permet de laisser la barre de menu figée */
     top: 0; /* en haut de l'écran */
@@ -30,70 +31,70 @@ a{ /* liens hypertextes */
     border-bottom: 1px solid grey; /* crée une barre noire de 1 px sur le bas de la div */
     background-color: whitesmoke; /* Met une couleur d'arrère plan blanche */
 }
-​
+
 .menu a{
     margin-top: 50%;
     margin-left: 20%; /* les balises a (lien hypertext) sont éloignés de 20% par rapport à l'objet à sa gauche */
     color: darkblue; /* le texte de la balise a sera écrit de cette couleur */    
 }
-​
+
 .menu li{
     display: inline;
     list-style: none;
     padding-inline-start: 0px !important;
 }
-​
-/* Main Page => contenu de la page */
-​
-/* EXERCICE : Mettre les bordures des blocs en rose et gris */
-/* EXERCICE : Mettre la liste des profils alignée à gauche */
-/* EXERCICE : réduire l'ombrage des blocs et changer la couleur */
-​
+
+/* Main Page => contenu de la page 
+    EXERCICE : Mettre les bordures des blocs en rose et gris 
+    EXERCICE : Mettre la liste des profils alignée à gauche 
+    EXERCICE : réduire l'ombrage des blocs et changer la couleur 
+*/
+
 .container-main{
     margin-top: 80px;
     align-items: center;
 }
-​
+
 .liste-profils-container{
     border: 1px solid violet; /* couleur de la bordure de la liste des profils */
     border-radius: 10px; /* Arrondir les angles du bloc */
-    width: 10%;    /* forcer la largeur à la taille souhaitée */
+    width: 10%;    /* forcer la largeur à la taille souhaitée */  
     display: inline-block;
     vertical-align: middle; /* alignement vertical du texte */
     margin-left: 5%; /* marge à gauche */
     text-align: center;  /* alignement vertical du texte */
-​
+
     -webkit-box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); 
-    box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); /* ombrage du bloc */
+    box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); /* Ombrage du bloc */
 }
-​
+
 .liste-profils-container ol{
     list-style: none;
     padding-inline-start: 0px !important;
 }
-​
+
 .profil2{
     margin-top: 10px;
 }
-​
+
 .profils-container{
     display: inline-block;
     vertical-align: top;
     padding-left: 15%;
 }
-​
+
 .container{
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-​
+
     border: 2px solid turquoise; /* couleur de la bordure des blocs */
     border-radius: 10px;
     margin-bottom: 50px;
     
-    -webkit-box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); /* ombrage du bloc */
-    box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); /* ombrage du bloc */
+    -webkit-box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); 
+    box-shadow: 2px 3px 15px 5px rgba(0,0,0,0.31); /* Ombrage du bloc */
 }
-​
+
 .text-container{
     margin-top: 20px; /* marge supérieur du texte */
     margin-left: 10px;  /* marge gauche du texte */
