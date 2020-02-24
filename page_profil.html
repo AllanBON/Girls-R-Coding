@@ -3,146 +3,196 @@
 <head>
 	<title>Nos profils</title>
 
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/base.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/utility.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+	<!-- Composant de la barre de menu -->
 	<div class="menu">
-		<ul>
-			<li><a href="index.html">Mur</a></li>
-			<li><a href="#">Actualités</a></li>
-			<li><a href="#">Profils</a></li>
-		</ul>
-	</div>
-	<div class="container-main">
-		<div class="liste-profils-container">
-			<nav>
-				<ol>
-					<li><a href="#" class="first-profil">Profil 1</a></li>
-					<li class="profil2"><a href="#" class="second-profil">Profil 2</a></li>
-				</ol>					
+		<div class="container-global">
+
+			<button class="menu__button" type="button" name="button">
+				<svg class="icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 0h24v24H0z" fill="none" />
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+				</svg>
+			</button>
+			<nav class="menu__navigation menu__navigation--mobile">
+				<a class="menu__link" href="index.html">Mon mur</a>
+				<a class="menu__link" href="#">Mon profil</a>
 			</nav>
 		</div>
-		<div class="profils-container">
+	</div>
+	<!-- fin de Composant -->
+	
+	<div class="container-global">
+		<div class="container-2">
+
+			<nav class="tab-navigation margin-bottom">
+				<a href="javascript:void(0)" class="js-tab tab-navigation__link tab-navigation__link--active" data-tab="js-profil-1">Profil 1</a>
+				<a href="javascript:void(0)" class="js-tab tab-navigation__link" data-tab="js-profil-2">Profil 2</a>
+			</nav>
+
 			<!-- Profil 1 -->
-			<div class="first-profil-container js-first-profil-container">
-				<div class="me container">
-					<div>
-						<img src="assets/images/candy.jpg" alt="image profil, petit (emoji)">
-					</div>
-					<div class="text-container">
-						<div>
-							<label><b>NOM Prénom</b></label>
-							<p>Descritpion d'une ligne</p>
-							<p>Dijon</p>
-						</div>
-						<div>
-							<label>Ecole : .......</label>
-							<p>Classe : ........</p>
-						</div>
+			<div class="js-profil-1">
+				<div class="profil margin-bottom">
+					<img class="profil__image" src="assets/images/candy.jpg" alt="image profil, petit (emoji)">
+					<div class="profil__description">
+							<div class="profil__infos">
+								<span class="profil__label">Nom : </span>
+								<span class="profil__value">Nom du profil 1</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__value profil__value--light">Petite description</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Ville : </span>
+								<span class="profil__value">...</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Ecole : </span>
+								<span class="profil__value">...</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Classe : </span>
+								<span class="profil__value">...</span>
+							</div>
 					</div>
 				</div>
-				<div class="passion">
-					<div class="first-passion container">
-						<div>
-							<span>
-								<img src="assets/images/informatique.jpg" alt="passion1">
-							</span>							
-						</div>
-						<div class="text-container">
-							<label>Passion 1</label>
-							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+
+
+				<div class="passion margin-bottom">
+					<img class="passion__image" src="assets/images/informatique.jpg" alt="passion1">
+					<div class="passion__content">
+						<div class="passion__title">Passion 1</div>
+						<div class="passion__description">
+							Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
 							consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
 							petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
 							arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
-							terrae Gallorum.</p>
-						</div>
-					</div>					
-					<div class="second-passion container">
-						<div>
-							<span>
-								<img src="assets/images/art.jpg" alt="passion2">
-							</span>							
-						</div>
-						<div class="text-container">
-							<label>Passion 2</label>
-							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
-								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
-								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
-								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
-								terrae Gallorum.</p>
+							terrae Gallorum.
 						</div>
 					</div>
 				</div>
+
+				<div class="passion margin-bottom">
+					<img class="passion__image" src="assets/images/art.jpg" alt="passion1">
+					<div class="passion__content">
+						<div class="passion__title">Passion 2</div>
+						<div class="passion__description">
+							Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+							consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+							petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+							arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+							terrae Gallorum.
+						</div>
+					</div>
+				</div>
+				
 			</div>
 			<!-- Fin Profil 1 -->
 
-			<!-- Début Profil 2 -->
-			<div class="profil-container second-profil-container js-second-profil-container">
-				<div class="me container">
-					<div>
-						<img src="assets/images/candy.jpg" alt="image profil1, petit (emoji)">
+			<!-- Profil 2 -->
+			<div class="js-profil-2">
+				<div class="profil margin-bottom">
+					<img class="profil__image" src="assets/images/candy.jpg" alt="image profil, petit (emoji)">
+					<div class="profil__description">
+							<div class="profil__infos">
+								<span class="profil__label">Nom : </span>
+								<span class="profil__value">Nom du profil 2</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__value profil__value--light">Petite description</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Ville : </span>
+								<span class="profil__value">...</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Ecole : </span>
+								<span class="profil__value">...</span>
+							</div>
+							<div class="profil__infos">
+								<span class="profil__label">Classe : </span>
+								<span class="profil__value">...</span>
+							</div>
 					</div>
-					<div class="text-container">
-						<div>
-							<label><b>NOM Prénom 2</b></label>
-							<p>Descritpion d'une ligne</p>
-							<p>Dijon</p>
-						</div>
-						<div>
-							<label>Ecole : .......</label>
-							<p>Classe : ........</p>
+				</div>
+
+
+				<div class="passion margin-bottom">
+					<img class="passion__image" src="assets/images/informatique.jpg" alt="passion1">
+					<div class="passion__content">
+						<div class="passion__title">Passion 1</div>
+						<div class="passion__description">
+							Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+							consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+							petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+							arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+							terrae Gallorum.
 						</div>
 					</div>
 				</div>
-				<div class="passion">
-					<div class="first-passion container">
-						<div>
-							<span><img src="assets/images/informatique.jpg" alt="passion1"></span>							
-						</div>
-						<div class="text-container">
-							<label>Passion 1</label>
-							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
-								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
-								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
-								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
-								terrae Gallorum.</p>
-						</div>
-					</div>
-					<div class="second-passion container">
-						<div>
-							<span>
-								<img src="assets/images/art.jpg" alt="passion2">
-							</span>							
-						</div>
-						<div class="text-container">
-							<label>Passion 2</label>
-							<p>Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
-								consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
-								petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
-								arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
-								terrae Gallorum.</p><br/>
+
+				<div class="passion margin-bottom">
+					<img class="passion__image" src="assets/images/art.jpg" alt="passion1">
+					<div class="passion__content">
+						<div class="passion__title">Passion 2</div>
+						<div class="passion__description">
+							Haec dum oriens diu perferret, caeli reserato tepore Constantius<br/>
+							consulatu suo septies et Caesaris ter egressus Arelate Valentiam<br/>
+							petit, in Gundomadum et Vadomarium fratres Alamannorum reges<br/>
+							arma moturus, quorum crebris excursibus vastabantur confines limitibus<br/>
+							terrae Gallorum.
 						</div>
 					</div>
 				</div>
+				
 			</div>
 			<!-- Fin Profil 2 -->
-		</div>	
+		</div>
 	</div>
 </body>
 </html>
 
 <script type="text/javascript">
-	var lienProfilF = document.getElementsByClassName('first-profil');
-	var profilF = document.getElementsByClassName('js-first-profil-container');
-	var lienProfilS = document.getElementsByClassName('second-profil');
-	var profilS = document.getElementsByClassName('js-second-profil-container');
-	profilS[0].style.display = "none"
 
-	lienProfilF[0].addEventListener("click", function(){changeProfil(profilF[0], profilS[0])}, false);
-	lienProfilS[0].addEventListener("click", function(){changeProfil(profilS[0], profilF[0])}, false);
+	const tabElements = document.querySelectorAll(".js-tab");
 
-	function changeProfil(pdisplayed, pHidden){
-		pHidden.style.display = "none"
-		pdisplayed.style.display = ""
-	}	
+	var activeTab = document.querySelector(".tab-navigation__link--active");
+
+	for (tab of tabElements) {
+
+		const tabData = tab.dataset.tab;
+
+		const containerElement = document.querySelector(`.${tabData}`);
+
+		if (tab === activeTab) {
+			containerElement.style.display = "block";
+		} else {
+			containerElement.style.display = "none";
+		}
+
+		tab.addEventListener("click", (e) => {
+
+			const activeClass = "tab-navigation__link--active";
+
+			let tabData = activeTab.dataset.tab;
+			let containerElement = document.querySelector(`.${tabData}`);
+
+			if (activeTab) {
+				activeTab.classList.remove(activeClass);
+				containerElement.style.display = "none";
+			}
+
+			activeTab = e.target;
+			tabData = activeTab.dataset.tab;
+			containerElement = document.querySelector(`.${tabData}`);
+
+			activeTab.classList.add(activeClass);
+			containerElement.style.display = "block";
+		})
+	}
+
 </script>

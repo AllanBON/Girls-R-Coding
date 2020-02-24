@@ -1,2 +1,20 @@
 /* A modifier */
 
+/*Mission 7 : modifier les couleurs du site
+	- Allez sur le site suivant : https://material.io/resources/color/#!/?view.left=0&view.right=0&primary.color=EA80FC
+	ce site permets de trouver des couleurs pour les sites internet par exemple
+	- Trouvez les couleurs qui vous plaisent puis récupérer les 3 codes couleurs associés (par exemple #ffb2ff)
+	- Remplacez ensuite le texte ci-dessous comme ceci : 
+		exemple : --background-light: #ffb2ff
+*/
+
+:root {
+	--background-light: var(--rose-lighter);
+	--primary: var(--rose-primary);
+	--primary-dark: var(--rose-dark);
+}
+
+/*Ici vous pouvez modifier l'image que vous voulez pour la mission 3*/
+.info-bar__image{
+	background-image : url('../images/art.jpg');
+}

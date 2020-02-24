@@ -25,31 +25,43 @@
         </svg>
       </button>
       <nav class="menu__navigation menu__navigation--mobile">
+        <a class="menu__link" href="#">Mon mur</a>
         <a class="menu__link" href="page_profil.html">Mon profil</a>
-        <a class="menu__link" href="#">Lien 2</a>
-        <a class="menu__link" href="#">Lien 3</a>
       </nav>
     </div>
   </div>
   <!-- fin de Composant -->
 
   <div class="container-global">
-
+	
+    <!--Mission 0 : Voir les émoticones disponibles 
+      - Aller sur le site : https://unicode.org/emoji/charts/full-emoji-list.html
+      Vous avez plein d'émoticones. Vous pourrez en ajouter dans les exercices ou vous voulez en faisant des copier/coller des images :D
+    -->
 
     <aside class="container-1">
 
       <!-- Composant de la carte profil -->
       <div class="profil-card aside-element">
+	  
+		    <!-- Mission 1 : Changer les photos de profil (vous pouvez récupérer une phot de votre choix sur internet, la copier dans le répertoire voulu et l'ajouter ici) -->
+		
         <img src="assets/images/bg.jpg" class="profil-card__background">
         <div class="profil-card__body">
 
           <img src="assets/images/logo.png" class="profil-card__avatar" />
-
+		
+		      <!-- Fin de la mission 1 -->
+		
           <div class="profil-card__infos">
 
-            <!-- Exercice 1 : Changer votre nom... -->
-            <b class="profil-card__title">John Doe</b>
-            <div class="text-light">Développeur Web</div>
+            <!-- Mission 2 : Changer votre nom et votre Job de Reve (Programmeuse, Youtubeuse, Instragrameuse, ...) :) -->
+			
+            <b id="idNom" class="profil-card__title">Votre nom</b>
+            <div class="text-light">Votre job de reve</div>
+			
+			      <!-- Fin de la mission 2 -->
+			
           </div>
         </div>
       </div>
@@ -61,23 +73,11 @@
 
     <div class="container-2">
 
-      <!-- Composant de la barre d'information -->
-      <div class="info-bar margin-bottom">
-        <div class="info-bar__item">
-          <strong class="info-bar__value">175</strong>
-          <span class="info-bar__label">Posts</span>
-        </div>
-        <div class="info-bar__item">
-          <strong class="info-bar__value">58</strong>
-          <span class="info-bar__label">Contacts</span>
-          <div class="info-bar__deco-line"></div>
-        </div>
-        <div class="info-bar__item">
-          <strong class="info-bar__value">587</strong>
-          <span class="info-bar__label">Messages</span>
-        </div>
+      <!-- Mission 3 (voir le document word) -->
+      <div class="info-bar">
+        	
       </div>
-      <!-- Fin de Composant -->
+      <!-- Fin de la mission 3 -->
 
 
       <!-- Composant de la zone de publication -->
@@ -104,27 +104,42 @@
         
         <article>
 
-          <!-- Composant d'un post -->
-          <div class="post post--white-bg">
+          <!-- Mission 4 : Ajouter une publication dans la page depuis le HTML 
+            - Modifier le nom de l'auteur
+            - Modifier le métier de reve
+            - Modifier la date 
+            - Modifier le texte de la publication
+            - Modifiez le nombre de likes 
+          -->
+          <div class="post post--white-bg margin-bottom">
             <div class="post__header post-header">
               <img src="assets/images/logo_bonbon.png" alt="" class="post__avatar">
               <div>
+			          <!--Nom de l'auteur-->
                 <b class="post__author">Jane Doe</b>
-                <div class="post__author-info post__author-info--light">Développeuse Web Back-end</div>
+				
+				        <!--Votre job de reve-->
+                <div class="post__author-info post__author-info--light">Développeuse Web</div>
               </div>
             </div>
 
-            <i class="post__date post__date--light">Posté il y a 7h</i>
+			      <!--Date de la publication-->
+            <i class="post__date post__date--light">Posté le 20 février 2020 à 14:35
+            </i>
+			
+			      <!--Le texte de la publication-->
             <p class="post__description">
-              Il y a 10 types de personnes. Ceux qui comprennent le binaire, et les autres.
+				      Bonjour ceci est ma premiere publication :) 
             </p>
 
             <aside class="feedback">
-              <span id="likeSpan0" class="feedback-item-numb">
-                0
+				      <!-- Nombre de likes ! -->
+              <span class="feedback-item">
+                <span id="likeSpan0">0</span>
+                likes
               </span>
               <span class="feedback-item">
-                Likes 1 commentaire
+                0 commentaire
               </span>
             </aside>
 
@@ -132,30 +147,8 @@
               <button type="button" name="likeSpan0" class="post__button post__button--like" onclick="likeAction(name)">Like</button>
               <button type="button" name="repondre" class="post__button post__button--answer">Répondre</button>
             </div>
-
-            <!-- Composant d'un commentaire de post -->
-            <div class="comment">
-              <div class="comment__triangle comment__triangle--top"></div>
-              <div class="comment__triangle comment__triangle--bottom"></div>
-              
-              <div class="post">
-                <div class="post__header">
-                  <img src="assets/images/logo_bonbon_b.png" alt="" class="post__avatar">
-                  <div>
-                    <b class="post__author">Jane Doe</b>
-                    <div class="post__author-info post__author-info--light">Développeuse Web Back-end</div>
-                  </div>
-                </div>
-                <i class="post__date post__date--light">Posté il y a 7h</i>
-                <p class="post__description post__description--no-margin-bottom">
-                  Il y a 10 types de personnes. Ceux qui comprennent le binaire, et les autres.
-                </p>
-              </div>
-            </div>
-            <!-- Fin de Composant -->
-
           </div>
-          <!-- Fin de Composant -->
+          <!-- Fin de la mission 4 -->
 
         </article>
 
@@ -163,18 +156,56 @@
     </div>
 
 
-    <!-- Composant d'un commentaire de post -->
+    <!--Mission 5 : Quartier libre
+      - Après avoir vu le site cheatSheet, vous devriez maitriser a la perfection les balises HTML
+      - Vous avez quartier libre ici, ajoutez les balises et le texte que vous voulez
+    -->
+	
     <aside class="container-3">
       <div class="copyright">
+	  
+		    <!-- Vos balises ici -->
         <div class="copyright__title">Réalisation</div>
         <p class="copyright__author">Ce site a été réalisé par ...</p>
+		
       </div>
     </aside>
-    <!-- Fin de Composant -->
+    <!-- Fin de la mission 5 -->
 
   </div>
 
   <script src="./assets/js/main.js"></script>
 </body>
+
+
+	<!-- Mission 6 : CSS
+		- Positionnez un identifiant sur la balise de votre choix pour ajouter une bordure (comme ceci : id="monID")
+		- Allez dans le fichier custom.css et écrivez ceci :
+			#monID{
+				border : /type de bordure/ /taille/ /couleur/;
+			}		
+		- remplacez les attributs /type de bordure/ /taille/ /couleur/ par la valeur voulue
+	-->
+
+<!-- Cheat ex
+<div class="info-bar__item">
+  <strong class="info-bar__value">175</strong>
+  <span class="info-bar__label">Posts</span>
+</div>
+<div class="info-bar__item">
+  <strong class="info-bar__value">58</strong>
+  <span class="info-bar__label">Contacts</span>
+  <div class="info-bar__deco-line"></div>
+</div>
+<div class="info-bar__item">
+  <strong class="info-bar__value">587</strong>
+  <span class="info-bar__label">Messages</span>
+</div>
+
+<h1 class="info-bar__title">Fil d'actualité de Lorie</h1> 
+		
+<div class="info-bar__image"></div>	
+
+-->
 
 </html>
